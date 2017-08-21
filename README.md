@@ -1,19 +1,18 @@
 ###### Software Catering Training
 #### Workshop: Kickstarter Openshift & Spring Boot  https://github.com/software-catering/training-openshift-springboot
-# step_5: add the backend service 'hello-service'
+# step_6: Spring Actuator & the sick service
 
 ## Todo:
-* create spring boot service 'hello-service'
-  * configure predefined "empty" maven module 'hello-service'
-  * implementation REST service in predefined class `HelloService`
-  * GET: `/hello` returns a dynamic JSON according to the followin example:
-    ```json
-    { 
-      "message": "hello",
-      "senderIp" : "1.2.3.4",
-      "timeStamp":  "= new Date().toString();"
-    }
-    ```
-    (whereas `senderIp` and `timeStamp` have to be replaced with real values)
-* create builc config, depyolment, service and route for the new service
-  **Important:** the route has to define the same hostname as the route of the web-ui
+* add Spring Actuator to `web-ui` and `hello-service`
+* implement a custom Health Indicator for `hello-service`:
+  * coupled with two REST endpoints:
+    * GET `/sick` makes the Health Indicator being `down`
+    * GET `/healthy` makes the Health Indicator being `up` again.
+* add a new service `admin-ui`:
+  * use https://github.com/codecentric/spring-boot-admin
+  * deploy it on openshift (with everything, Route to own host)
+* make sure `web-ui` and `hello-service` are visible in `admin-ui`
+
+## Hints:
+* https://docs.spring.io/spring-boot/docs/current/reference/html/production-ready-endpoints.html 
+* http://codecentric.github.io/spring-boot-admin/1.5.3/#getting-started

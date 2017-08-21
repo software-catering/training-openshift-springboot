@@ -16,3 +16,4 @@
 ## Hints:
 * https://docs.spring.io/spring-boot/docs/current/reference/html/production-ready-endpoints.html 
 * http://codecentric.github.io/spring-boot-admin/1.5.3/#getting-started
+* http://codecentric.github.io/spring-boot-admin/1.5.3/#spring-boot-admin-client config key `spring.boot.admin.client.prefer-ip

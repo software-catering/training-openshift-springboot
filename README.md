@@ -47,7 +47,7 @@
                 document.getElementById("response").innerHTML += this.readyState + "*";
             }
         };
-        xhttp.open("GET", "hello", true);
+        xhttp.open("GET", "https:/hello/", true);
         xhttp.send();
     }
 </script>

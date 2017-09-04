@@ -12,5 +12,3 @@ oc expose dc hello-service --port 8080
 
 WEB_UI_HOST=$(oc get route -o=jsonpath='{.spec.host}'  web-ui)
 oc create  route edge --hostname ${WEB_UI_HOST} --path=/hello --service hello-service
-
-oc create  route edge --insecure-policy=Redirect --hostname=$(oc get route -o=jsonpath='{.spec.host}' web-ui) --path=/hello --service hello-service

@@ -13,6 +13,6 @@ oc expose dc admin-ui --port 8080
 WEB_UI_HOST=$(oc get route -o=jsonpath='{.spec.host}'  web-ui)
 oc create  route edge --service admin-ui
 
-# mvn clean install
-# oc start-build web-ui --from-file web-ui/target/app.jar
-# oc start-build hello-service --from-file hello-service/target/app.jar
+mvn clean install
+oc start-build web-ui --from-file web-ui/target/app.jar
+oc start-build hello-service --from-file hello-service/target/app.jar

@@ -1,5 +1,6 @@
 package software.catering.training.hello;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,11 +17,17 @@ public class HelloService {
         SpringApplication.run(HelloService.class, args);
     }
 
+    @Autowired
+    private SickService sickService;
+
     @RequestMapping(path = "/", method = RequestMethod.GET)
     public HelloResponse hello() throws UnknownHostException {
 
-        String message = "hello";
-        return new HelloResponse(message);
+        if (sickService.isSick()) {
+            return new HelloResponse("hello, I'm sick");
+        } else {
+            return new HelloResponse("hello");
+        }
     }
 }
 

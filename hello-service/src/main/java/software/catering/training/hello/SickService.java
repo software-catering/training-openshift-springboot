@@ -39,4 +39,7 @@ public class SickService implements HealthIndicator {
         return health.build();
     }
 
+    public boolean isSick() {
+        return sick;
+    }
 }

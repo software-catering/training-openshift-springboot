@@ -3,7 +3,7 @@
 set -e
 
 
-cat web-ui/Dockerfile | sed 's/target\/app\.jar/app\.jar/g' | oc new-build --name web-ui -D -
+cat web-ui/Dockerfile | oc new-build --name web-ui -D -
 
 mvn clean install
 

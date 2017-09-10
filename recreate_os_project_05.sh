@@ -11,4 +11,4 @@ oc new-app myproject/hello-service
 oc expose dc hello-service --port 8080
 
 WEB_UI_HOST=$(oc get route -o=jsonpath='{.spec.host}'  web-ui)
-oc create  route edge --hostname ${WEB_UI_HOST} --path=/hello --service hello-service
+oc expose service hello-service --hostname ${WEB_UI_HOST} --path /hello

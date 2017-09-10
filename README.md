@@ -55,3 +55,7 @@
 </body>
 </html>
 ```
+## Hints:
+* https://docs.spring.io/spring-boot/docs/1.5.6.RELEASE/reference/htmlsingle/#using-boot-auto-configuration
+* https://docs.spring.io/spring-boot/docs/1.5.6.RELEASE/reference/htmlsingle/#using-boot-using-springbootapplication-annotation
+* https://docs.spring.io/spring-boot/docs/1.5.6.RELEASE/reference/htmlsingle/#boot-features-spring-mvc-static-content

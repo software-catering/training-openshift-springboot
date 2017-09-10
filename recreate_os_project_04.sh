@@ -6,4 +6,4 @@ oc new-app myproject/web-ui
 
 oc expose dc web-ui --port 8080
 
-oc create  route edge --service web-ui
+oc expose service web-ui

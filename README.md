@@ -9,6 +9,9 @@ http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.h
 https://maven.apache.org/download.cgi
 * install git (command line) client: 
 https://git-scm.com/downloads
+* install docker:
+  * Mac: https://store.docker.com/editions/community/docker-ce-desktop-mac
+  * Windows: https://store.docker.com/editions/community/docker-ce-desktop-windows
 * install Redhat Minishift: 
 https://docs.openshift.org/latest/minishift/getting-started/installing.html
 * make sure you have a terminal with bash

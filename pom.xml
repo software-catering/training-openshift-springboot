@@ -26,6 +26,7 @@
     <modules>
         <module>web-ui</module>
         <module>hello-service</module>
+        <module>admin-ui</module>
     </modules>
 
     <dependencies>

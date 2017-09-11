@@ -3,7 +3,7 @@
 # step_7: Probes & Scale
 
 ## Todo:
-* add Readiness and Liveness Probes to all services (admin-ui, web-ui, hello-service):
+* add Readiness Probes to all services (admin-ui, web-ui, hello-service):
   * pointing to the health endpoint of Spring Actuator
 * scale web-ui service up to 2 instances using the web console
 * scale hello service up to 2 instances using the cli

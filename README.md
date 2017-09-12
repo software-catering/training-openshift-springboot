@@ -8,4 +8,4 @@
 * expose the service 'web-ui' with a route with the same name
 
 ## Hints
-* `$ oc help`
+* `$ oc new-app --help`

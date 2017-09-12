@@ -9,3 +9,4 @@
 
 ## Hints
 * `$ oc new-app --help`
+* `$ oc expose --help`

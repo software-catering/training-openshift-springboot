@@ -10,7 +10,6 @@
 
 ## Hints
 * `$ oc new-build --help`
-* `$ oc run-beuild --help`
+* `$ oc run-build --help`
 * `$ oc get bc`
-* `$ oc edit --help`
 * https://docs.openshift.com/container-platform/3.6/dev_guide/builds/index.html  

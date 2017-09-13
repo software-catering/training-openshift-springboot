@@ -17,3 +17,8 @@
     (whereas `senderIp` and `timeStamp` have to be replaced with real values)
 * create build config, deployment, service and route for the new service
 * **Important:** the route has to define the same hostname as the route of the web-ui
+
+## Hints:
+* https://spring.io/guides/gs/rest-service/
+* `@RestController`
+* `@RequestMapping(....)`
